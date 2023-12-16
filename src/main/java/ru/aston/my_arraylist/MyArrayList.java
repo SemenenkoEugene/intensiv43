@@ -67,6 +67,10 @@ public class MyArrayList<T> {
         }
     }
 
+    public boolean isEmpty() {
+        return size == 0;
+    }
+
     @Override
     public String toString() {
         return "MyArrayList{" +
