@@ -36,11 +36,16 @@ public class MyArrayList<T> {
 
     public void add(int index, T element) {
         checkCapacity();
-        for (int i = size; i > index; i--) {
-            list[i] = list[i - 1];
+        if (index >= 0 && index < list.length) {
+            for (int i = size; i > index; i--) {
+                list[i] = list[i - 1];
+            }
+            list[index] = element;
+            size++;
+        } else {
+            throw new ArrayIndexOutOfBoundsException("The index goes outside the array");
         }
-        list[index] = element;
-        size++;
+
     }
 
     private void checkCapacity() {
@@ -51,6 +56,14 @@ public class MyArrayList<T> {
             }
             list = newArray;
             capacity *= 2;
+        }
+    }
+
+    public T get(int index) {
+        if (index >= 0 && index < list.length) {
+            return list[index];
+        } else {
+            throw new ArrayIndexOutOfBoundsException("The index goes outside the array");
         }
     }
 
