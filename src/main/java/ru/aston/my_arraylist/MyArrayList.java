@@ -1,6 +1,7 @@
 package ru.aston.my_arraylist;
 
 import java.util.Arrays;
+import java.util.NoSuchElementException;
 
 /**
  * Написать свой кастомный ArrayList, обязательно реализовать следующие методы:
@@ -16,6 +17,8 @@ import java.util.Arrays;
  * @param <T>
  */
 public class MyArrayList<T> {
+    private static final String THE_INDEX_GOES_OUTSIDE_THE_ARRAY = "The index goes outside the array";
+    private static final String ELEMENT_NOT_FOUND = "Element not found";
     private T[] list;
     private int size;
     private static final int DEFAULT_CAPACITY = 10;
@@ -43,7 +46,7 @@ public class MyArrayList<T> {
             list[index] = element;
             size++;
         } else {
-            throw new ArrayIndexOutOfBoundsException("The index goes outside the array");
+            throw new ArrayIndexOutOfBoundsException(THE_INDEX_GOES_OUTSIDE_THE_ARRAY);
         }
 
     }
@@ -63,7 +66,7 @@ public class MyArrayList<T> {
         if (index >= 0 && index < list.length) {
             return list[index];
         } else {
-            throw new ArrayIndexOutOfBoundsException("The index goes outside the array");
+            throw new ArrayIndexOutOfBoundsException(THE_INDEX_GOES_OUTSIDE_THE_ARRAY);
         }
     }
 
@@ -77,8 +80,30 @@ public class MyArrayList<T> {
                 list[i] = list[i + 1];
             }
         } else {
-            throw new ArrayIndexOutOfBoundsException("The index goes outside the array");
+            throw new ArrayIndexOutOfBoundsException(THE_INDEX_GOES_OUTSIDE_THE_ARRAY);
         }
+    }
+
+    public void remove(T element) {
+        int pos = index(element);
+
+        if (pos < 0) {
+            throw new NoSuchElementException(ELEMENT_NOT_FOUND);
+        }
+        remove(pos);
+    }
+
+    private int index(T element) {
+        if (element == null) {
+            return -1;
+        }
+
+        for (int i = 0; i < size; i++) {
+            if (element.equals(list[i])) {
+                return i;
+            }
+        }
+        return -1;
     }
 
     @Override
