@@ -71,6 +71,16 @@ public class MyArrayList<T> {
         return size == 0;
     }
 
+    public void remove(int index) {
+        if (index >= 0 && index < list.length) {
+            for (int i = index; i < size; i++) {
+                list[i] = list[i + 1];
+            }
+        } else {
+            throw new ArrayIndexOutOfBoundsException("The index goes outside the array");
+        }
+    }
+
     @Override
     public String toString() {
         return "MyArrayList{" +
