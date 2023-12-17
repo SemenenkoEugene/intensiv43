@@ -1,6 +1,8 @@
 package ru.aston.my_arraylist;
 
-import java.util.*;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Comparator;
 
 /**
  * Написать свой кастомный ArrayList, обязательно реализовать следующие методы:
@@ -77,7 +79,6 @@ public class MyArrayList<T> {
         if (index < 0 || index > size) {
             throw new IndexOutOfBoundsException("Index " + index + " out of bounds");
         }
-
         return list[index];
     }
 
@@ -95,7 +96,7 @@ public class MyArrayList<T> {
         }
     }
 
-    public void remove(T element) {
+    public void removeElement(T element) {
         for (int i = 0; i < size; i++) {
             if (list[i].equals(element)) {
                 for (int j = i; j < size - 1; j++) {
@@ -106,6 +107,10 @@ public class MyArrayList<T> {
                 return;
             }
         }
+    }
+
+    public int size() {
+        return size;
     }
 
     public void sort(Comparator<? super T> c) {
