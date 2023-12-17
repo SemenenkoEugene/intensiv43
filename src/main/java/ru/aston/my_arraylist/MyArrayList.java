@@ -1,7 +1,6 @@
 package ru.aston.my_arraylist;
 
-import java.util.Arrays;
-import java.util.NoSuchElementException;
+import java.util.*;
 
 /**
  * Написать свой кастомный ArrayList, обязательно реализовать следующие методы:
@@ -17,8 +16,6 @@ import java.util.NoSuchElementException;
  * @param <T>
  */
 public class MyArrayList<T> {
-    private static final String THE_INDEX_GOES_OUTSIDE_THE_ARRAY = "The index goes outside the array";
-    private static final String ELEMENT_NOT_FOUND = "Element not found";
     private T[] list;
     private int size;
     private static final int DEFAULT_CAPACITY = 10;
@@ -37,37 +34,51 @@ public class MyArrayList<T> {
     }
 
 
-    public void add(int index, T element) {
+    public void add(int index, T element) throws ClassCastException {
         checkCapacity();
-        if (index >= 0 && index < list.length) {
-            for (int i = size; i > index; i--) {
-                list[i] = list[i - 1];
-            }
-            list[index] = element;
-            size++;
-        } else {
-            throw new ArrayIndexOutOfBoundsException(THE_INDEX_GOES_OUTSIDE_THE_ARRAY);
+        if (index < 0 || index > size) {
+            throw new IndexOutOfBoundsException("Index " + index + " out of bounds");
         }
 
+        T[] newArray = (T[]) new Object[size + 1];
+        System.arraycopy(list, 0, newArray, 0, index);
+        newArray[index] = element;
+        System.arraycopy(list, index, newArray, index + 1, size - index);
+
+        list = newArray;
+        size++;
     }
 
     private void checkCapacity() {
         if (size == capacity) {
             T[] newArray = (T[]) new Object[capacity * 2];
-            for (int i = 0; i < size; i++) {
-                newArray[i] = list[i];
-            }
+            if (size >= 0)
+                System.arraycopy(list, 0, newArray, 0, size);
             list = newArray;
             capacity *= 2;
         }
     }
 
-    public T get(int index) {
-        if (index >= 0 && index < list.length) {
-            return list[index];
-        } else {
-            throw new ArrayIndexOutOfBoundsException(THE_INDEX_GOES_OUTSIDE_THE_ARRAY);
+    public void addAll(Collection<? extends T> c) {
+        for (T item : c) {
+            if (size == list.length) {
+                list = Arrays.copyOf(list, list.length * 2);
+            }
+            list[size] = item;
+            size++;
         }
+    }
+
+    public void clear() {
+        size = 0;
+    }
+
+    public T get(int index) {
+        if (index < 0 || index > size) {
+            throw new IndexOutOfBoundsException("Index " + index + " out of bounds");
+        }
+
+        return list[index];
     }
 
     public boolean isEmpty() {
@@ -75,42 +86,73 @@ public class MyArrayList<T> {
     }
 
     public void remove(int index) {
-        if (index >= 0 && index < list.length) {
-            for (int i = index; i < size; i++) {
-                list[i] = list[i + 1];
-            }
-        } else {
-            throw new ArrayIndexOutOfBoundsException(THE_INDEX_GOES_OUTSIDE_THE_ARRAY);
+        if (index < 0 || index >= size) {
+            throw new IndexOutOfBoundsException("Index " + index + " out of bounds");
+        }
+        for (int i = index; i < size; i++) {
+            list[i] = list[i + 1];
+            size--;
         }
     }
 
     public void remove(T element) {
-        int pos = index(element);
-
-        if (pos < 0) {
-            throw new NoSuchElementException(ELEMENT_NOT_FOUND);
-        }
-        remove(pos);
-    }
-
-    private int index(T element) {
-        if (element == null) {
-            return -1;
-        }
-
         for (int i = 0; i < size; i++) {
-            if (element.equals(list[i])) {
-                return i;
+            if (list[i].equals(element)) {
+                for (int j = i; j < size - 1; j++) {
+                    list[j] = list[j + 1];
+                }
+                list[size - 1] = null;
+                size--;
+                return;
             }
         }
-        return -1;
     }
+
+    public void sort(Comparator<? super T> c) {
+        T[] temp = (T[]) new Object[size];
+        mergeSort(0, size - 1, temp, c);
+    }
+
+    private void mergeSort(int low, int high, T[] temp, Comparator<? super T> c) {
+        if (low < high) {
+            int mid = low + (high - low) / 2;
+            mergeSort(low, mid, temp, c);
+            mergeSort(mid + 1, high, temp, c);
+            merge(low, mid, high, temp, c);
+        }
+    }
+
+    private void merge(int low, int mid, int high, T[] temp, Comparator<? super T> c) {
+        if (high + 1 - low >= 0)
+            System.arraycopy(list, low, temp, low, high + 1 - low);
+
+        int i = low;
+        int j = mid + 1;
+        int k = low;
+
+        while (i <= mid && j <= high) {
+            if (c.compare(temp[i], temp[j]) <= 0) {
+                list[k] = temp[i];
+                i++;
+            } else {
+                list[k] = temp[j];
+                j++;
+            }
+            k++;
+        }
+
+        while (i <= mid) {
+            list[k] = temp[i];
+            k++;
+            i++;
+        }
+    }
+
 
     @Override
     public String toString() {
-        return "MyArrayList{" +
-               "list=" + Arrays.toString(list) +
-               ", size=" + size +
-               '}';
+        return Arrays.toString(Arrays.copyOf(list, size));
     }
+
+
 }
