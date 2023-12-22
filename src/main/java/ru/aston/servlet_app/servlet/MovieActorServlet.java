@@ -19,11 +19,11 @@ public class MovieActorServlet extends HttpServlet {
         resp.setContentType("text/html");
         resp.setCharacterEncoding(StandardCharsets.UTF_8.name());
 
-        Integer actorId = Integer.valueOf(req.getParameter("actorId"));
+        Integer directorId = Integer.valueOf(req.getParameter("directorId"));
         try (PrintWriter writer = resp.getWriter()) {
-            writer.write("<h1>Список фильмов, в которых этот актер снимался:</h1>");
+            writer.write("<h1>Список фильмов, которые снял этот режиссер:</h1>");
             writer.write("<ul>");
-            movieService.findAllByActorId(actorId).forEach(movieDto ->
+            movieService.findAllByDirectorId(directorId).forEach(movieDto ->
                     writer.write("""
                             <li>
                             <a> Название фильма: %s, год выпуска: %d</a>

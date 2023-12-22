@@ -25,8 +25,8 @@ public class ActorServlet extends HttpServlet {
             actorService.findAll().forEach(actorDto ->
                     writer.write("""
                             <li>
-                            <a href='/movies?actorId=%d'>%s</a>
-                            </li>""".formatted(actorDto.getId(),actorDto.getName())));
+                            <a>%s</a>
+                            </li>""".formatted(actorDto.getName())));
             writer.write("</ul>");
         }
     }

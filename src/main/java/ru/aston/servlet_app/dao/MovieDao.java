@@ -49,7 +49,7 @@ public class MovieDao implements Dao<Integer, Movie> {
 
             ResultSet resultSet = statement.executeQuery();
             while (resultSet.next()) {
-                movies.add(buildMovies(resultSet));
+                movies.add(buildMovie(resultSet));
             }
             return movies;
         } catch (SQLException e) {
@@ -58,21 +58,12 @@ public class MovieDao implements Dao<Integer, Movie> {
 
     }
 
-    private Movie buildMovies(ResultSet resultSet) throws SQLException {
-        return new Movie(
-                resultSet.getInt("movie_id"),
-                resultSet.getInt("director_id"),
-                resultSet.getString("name"),
-                resultSet.getInt("year_of_production")
-        );
-    }
-
     @Override
     public boolean update(Movie movie) {
         return false;
     }
 
-    public Optional<Movie> findAllByActorId(Integer id) {
+    public Optional<Movie> findAllByDirectorId(Integer id) {
         try (Connection connection = ConnectionManager.get();
              PreparedStatement statement = connection.prepareStatement(FIND_BY_ID_SQL)) {
             statement.setInt(1, id);

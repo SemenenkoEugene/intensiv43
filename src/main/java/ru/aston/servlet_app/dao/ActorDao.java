@@ -82,6 +82,7 @@ public class ActorDao implements Dao<Integer, Actor> {
         }
     }
 
+
     private static Actor buildActor(ResultSet resultSet) throws SQLException {
         return new Actor(
                 resultSet.getInt("actor_id"),

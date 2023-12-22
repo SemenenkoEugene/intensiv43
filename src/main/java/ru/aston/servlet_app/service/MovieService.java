@@ -20,8 +20,8 @@ public class MovieService {
         return INSTANCE;
     }
 
-    public List<MovieDto> findAllByActorId(Integer actorId) {
-        return movieDao.findAllByActorId(actorId).stream()
+    public List<MovieDto> findAllByDirectorId(Integer actorId) {
+        return movieDao.findAllByDirectorId(actorId).stream()
                 .map(movie -> new MovieDto(
                         movie.getId(),
                         movie.getDirector(),

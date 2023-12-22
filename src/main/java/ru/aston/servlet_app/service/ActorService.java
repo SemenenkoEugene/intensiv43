@@ -3,7 +3,6 @@ package ru.aston.servlet_app.service;
 import lombok.NoArgsConstructor;
 import ru.aston.servlet_app.dao.ActorDao;
 import ru.aston.servlet_app.dto.ActorDto;
-import ru.aston.servlet_app.entity.Actor;
 import ru.aston.servlet_app.mapper.ActorMapper;
 
 import java.util.List;
