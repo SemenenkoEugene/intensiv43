@@ -24,6 +24,11 @@ public class MovieDao implements Dao<Integer, Movie> {
             WHERE movie_id = ?
             """;
 
+    private static final String FIND_FILM_BY_ACTOR_SQL = """
+            SELECT actor.name, movie.name, movie.year_of_production FROM actor JOIN Actor_Movie AM
+                ON actor.actor_id = AM.actor_id JOIN movie ON AM.movie_id = Movie.movie_id;
+            """;
+
     private MovieDao() {
     }
 
@@ -45,18 +50,40 @@ public class MovieDao implements Dao<Integer, Movie> {
     public List<Movie> findAll() {
         try (Connection connection = ConnectionManager.get();
              PreparedStatement statement = connection.prepareStatement(FIND_ALL_SQL)) {
-            List<Movie> movies = new ArrayList<>();
+            List<Movie> moviesByActor = new ArrayList<>();
 
             ResultSet resultSet = statement.executeQuery();
             while (resultSet.next()) {
-                movies.add(buildMovie(resultSet));
+                moviesByActor.add(buildMovie(resultSet));
             }
-            return movies;
+
+            return moviesByActor;
         } catch (SQLException e) {
             throw new DaoException(e.getMessage());
         }
-
     }
+
+    public List<Movie> findFilmByActor(Integer id) {
+        List<Movie> moviesByActor = new ArrayList<>();
+
+        try (Connection connection = ConnectionManager.get();
+             PreparedStatement statement = connection.prepareStatement(FIND_FILM_BY_ACTOR_SQL)) {
+            statement.setInt(1, id);
+            ResultSet resultSet = statement.executeQuery();
+
+            while (resultSet.next()) {
+                Movie movie = new Movie();
+                movie.setName(resultSet.getString("name"));
+                movie.setYearOfProduction(resultSet.getInt("year_of_production"));
+                moviesByActor.add(movie);
+            }
+
+            return moviesByActor;
+        } catch (SQLException e) {
+            throw new DaoException(e.getMessage());
+        }
+    }
+
 
     @Override
     public boolean update(Movie movie) {

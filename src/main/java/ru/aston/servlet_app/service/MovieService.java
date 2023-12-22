@@ -2,6 +2,7 @@ package ru.aston.servlet_app.service;
 
 import lombok.NoArgsConstructor;
 import ru.aston.servlet_app.dao.MovieDao;
+import ru.aston.servlet_app.dto.MovieActorDto;
 import ru.aston.servlet_app.dto.MovieDto;
 import ru.aston.servlet_app.mapper.MovieMapper;
 
@@ -20,8 +21,8 @@ public class MovieService {
         return INSTANCE;
     }
 
-    public List<MovieDto> findAllByDirectorId(Integer actorId) {
-        return movieDao.findAllByDirectorId(actorId).stream()
+    public List<MovieDto> findAllByDirectorId(Integer directorId) {
+        return movieDao.findAllByDirectorId(directorId).stream()
                 .map(movie -> new MovieDto(
                         movie.getId(),
                         movie.getDirector(),
@@ -41,5 +42,17 @@ public class MovieService {
 
                 ))
                 .collect(Collectors.toList());
+    }
+
+    public List<MovieDto> findFilmByActorId(Integer actorId){
+        return movieDao.findFilmByActor(actorId).stream()
+                .map(movie -> new MovieDto(
+                        movie.getId(),
+                        movie.getDirector(),
+                        movie.getName(),
+                        movie.getYearOfProduction()
+                ))
+                .collect(Collectors.toList());
+
     }
 }

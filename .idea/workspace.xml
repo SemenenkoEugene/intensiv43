@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="unnamed" />
       <artifact name="unnamed2" />
     </artifacts-to-build>
   </component>
@@ -10,25 +9,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f8460f0-851d-4a07-ad7b-1f24c0e971a6" name="Changes" comment="init: Init">
+    <list default="true" id="3f8460f0-851d-4a07-ad7b-1f24c0e971a6" name="Changes" comment="fix: исправлена логика">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/aston/servlet_app/dto/MovieActorDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/aston/servlet_app/servlet/MovieDirectorServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/unnamed2/WEB-INF/classes/ru/aston/servlet_app/dao/MovieDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/unnamed2/WEB-INF/classes/ru/aston/servlet_app/dao/MovieDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/unnamed2/WEB-INF/classes/ru/aston/servlet_app/dto/ActorDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/unnamed2/WEB-INF/classes/ru/aston/servlet_app/dto/ActorDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/unnamed2/WEB-INF/classes/ru/aston/servlet_app/entity/Director$DirectorBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/unnamed2/WEB-INF/classes/ru/aston/servlet_app/entity/Director$DirectorBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/unnamed2/WEB-INF/classes/ru/aston/servlet_app/entity/Director.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/unnamed2/WEB-INF/classes/ru/aston/servlet_app/entity/Director.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/unnamed2/WEB-INF/classes/ru/aston/servlet_app/service/ActorService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/unnamed2/WEB-INF/classes/ru/aston/servlet_app/service/ActorService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/unnamed2/WEB-INF/classes/ru/aston/servlet_app/entity/Movie$MovieBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/unnamed2/WEB-INF/classes/ru/aston/servlet_app/entity/Movie$MovieBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/unnamed2/WEB-INF/classes/ru/aston/servlet_app/entity/Movie.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/unnamed2/WEB-INF/classes/ru/aston/servlet_app/entity/Movie.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/unnamed2/WEB-INF/classes/ru/aston/servlet_app/mapper/MovieMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/unnamed2/WEB-INF/classes/ru/aston/servlet_app/mapper/MovieMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/unnamed2/WEB-INF/classes/ru/aston/servlet_app/service/MovieService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/unnamed2/WEB-INF/classes/ru/aston/servlet_app/service/MovieService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/unnamed2/WEB-INF/classes/ru/aston/servlet_app/servlet/ActorServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/unnamed2/WEB-INF/classes/ru/aston/servlet_app/servlet/ActorServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/unnamed2/WEB-INF/classes/ru/aston/servlet_app/servlet/MovieServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/unnamed2/WEB-INF/classes/ru/aston/servlet_app/servlet/MovieServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/aston/servlet_app/dao/ActorDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/aston/servlet_app/dao/ActorDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/unnamed2/WEB-INF/classes/ru/aston/servlet_app/servlet/MovieActorServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/unnamed2/WEB-INF/classes/ru/aston/servlet_app/servlet/MovieActorServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/aston/servlet_app/dao/MovieDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/aston/servlet_app/dao/MovieDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/aston/servlet_app/dto/ActorDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/aston/servlet_app/dto/ActorDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/aston/servlet_app/entity/Director.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/aston/servlet_app/entity/Director.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/aston/servlet_app/mapper/Mapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/aston/servlet_app/mapper/Mapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/aston/servlet_app/service/ActorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/aston/servlet_app/service/ActorService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/aston/servlet_app/entity/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/aston/servlet_app/entity/Movie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/aston/servlet_app/mapper/MovieMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/aston/servlet_app/mapper/MovieMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/aston/servlet_app/service/MovieService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/aston/servlet_app/service/MovieService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/aston/servlet_app/servlet/ActorServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/aston/servlet_app/servlet/ActorServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/aston/servlet_app/servlet/MovieActorServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/aston/servlet_app/servlet/MovieActorServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/aston/servlet_app/servlet/MovieServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/aston/servlet_app/servlet/MovieServlet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,32 +64,33 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;feature/hw3__JDBCApp&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;cn.yiiguxing.plugin.translate&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "extract.method.default.visibility": "private",
+    "git-widget-placeholder": "feature/hw3__JDBCApp",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "cn.yiiguxing.plugin.translate",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="ru.aston.servlet_app.dto" />
@@ -200,11 +198,6 @@
       <option name="OPEN_IN_BROWSER" value="false" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="unnamed">
-          <settings>
-            <option name="CONTEXT_PATH" value="/" />
-          </settings>
-        </artifact>
         <artifact name="unnamed2">
           <settings>
             <option name="CONTEXT_PATH" value="" />
@@ -284,7 +277,6 @@
       </ConfigurationWrapper>
       <method v="2">
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="unnamed" />
           <artifact name="unnamed2" />
         </option>
       </method>
@@ -425,7 +417,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703182556484</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="fix: исправлена логика">
+      <option name="closed" value="true" />
+      <created>1703237686550</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1703237686550</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -467,7 +467,19 @@
     <MESSAGE value="style: код-style" />
     <MESSAGE value="feat: создал класс Director" />
     <MESSAGE value="init: Init" />
-    <option name="LAST_COMMIT_MESSAGE" value="init: Init" />
+    <MESSAGE value="fix: исправлена логика" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: исправлена логика" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ru/aston/servlet_app/dao/MovieDao.java</url>
+          <line>70</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -1,6 +1,7 @@
 package ru.aston.servlet_app.mapper;
 
 import lombok.NoArgsConstructor;
+import ru.aston.servlet_app.dto.MovieActorDto;
 import ru.aston.servlet_app.dto.MovieDto;
 import ru.aston.servlet_app.entity.Movie;
 
