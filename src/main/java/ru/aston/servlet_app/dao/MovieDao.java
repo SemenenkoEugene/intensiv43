@@ -8,6 +8,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -23,7 +24,8 @@ public class MovieDao implements Dao<Integer, Movie> {
             WHERE movie_id = ?
             """;
 
-    private MovieDao(){}
+    private MovieDao() {
+    }
 
     public static MovieDao getInstance() {
         return INSTANCE;
@@ -41,7 +43,28 @@ public class MovieDao implements Dao<Integer, Movie> {
 
     @Override
     public List<Movie> findAll() {
-        return null;
+        try (Connection connection = ConnectionManager.get();
+             PreparedStatement statement = connection.prepareStatement(FIND_ALL_SQL)) {
+            List<Movie> movies = new ArrayList<>();
+
+            ResultSet resultSet = statement.executeQuery();
+            while (resultSet.next()) {
+                movies.add(buildMovies(resultSet));
+            }
+            return movies;
+        } catch (SQLException e) {
+            throw new DaoException(e.getMessage());
+        }
+
+    }
+
+    private Movie buildMovies(ResultSet resultSet) throws SQLException {
+        return new Movie(
+                resultSet.getInt("movie_id"),
+                resultSet.getInt("director_id"),
+                resultSet.getString("name"),
+                resultSet.getInt("year_of_production")
+        );
     }
 
     @Override
@@ -49,14 +72,14 @@ public class MovieDao implements Dao<Integer, Movie> {
         return false;
     }
 
-    public Optional<Movie> findAllByActorId(Integer id){
+    public Optional<Movie> findAllByActorId(Integer id) {
         try (Connection connection = ConnectionManager.get();
              PreparedStatement statement = connection.prepareStatement(FIND_BY_ID_SQL)) {
             statement.setInt(1, id);
 
             ResultSet resultSet = statement.executeQuery();
             Movie movie = null;
-            if (resultSet.next()){
+            if (resultSet.next()) {
                 movie = buildMovie(resultSet);
             }
             return Optional.ofNullable(movie);

@@ -10,37 +10,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f8460f0-851d-4a07-ad7b-1f24c0e971a6" name="Changes" comment="feat: создал класс Director">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/unnamed.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/unnamed2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqlDataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/aston/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/aston/servlet_app/dao/ActorDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/aston/servlet_app/dao/Dao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/aston/servlet_app/dao/MovieDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/aston/servlet_app/dto/ActorDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/aston/servlet_app/dto/MovieDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/aston/servlet_app/entity/Actor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/aston/servlet_app/entity/Movie.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/aston/servlet_app/exception/DaoException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/aston/servlet_app/mapper/ActorMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/aston/servlet_app/mapper/Mapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/aston/servlet_app/mapper/MovieMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/aston/servlet_app/service/ActorService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/aston/servlet_app/service/MovieService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/aston/servlet_app/servlet/ActorServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/aston/servlet_app/servlet/MovieServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/aston/servlet_app/util/ConnectionManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/aston/servlet_app/util/PropertiesUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
+    <list default="true" id="3f8460f0-851d-4a07-ad7b-1f24c0e971a6" name="Changes" comment="init: Init">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/aston/servlet_app/servlet/MovieActorServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/schema.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/aston/my_arraylist/MyArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/aston/my_arraylist/MyArrayList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/aston/servlet_app/model/Director.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/aston/servlet_app/entity/Director.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/aston/servlet_app/dao/MovieDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/aston/servlet_app/dao/MovieDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/aston/servlet_app/service/MovieService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/aston/servlet_app/service/MovieService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/aston/servlet_app/servlet/MovieServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/aston/servlet_app/servlet/MovieServlet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -331,7 +307,7 @@
       <workItem from="1702650239281" duration="676000" />
       <workItem from="1702730501320" duration="21400000" />
       <workItem from="1702831244065" duration="762000" />
-      <workItem from="1702899643335" duration="28707000" />
+      <workItem from="1702899643335" duration="34423000" />
     </task>
     <task id="LOCAL-00001" summary="init: init commit">
       <option name="closed" value="true" />
@@ -429,7 +405,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703098422360</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="init: Init">
+      <option name="closed" value="true" />
+      <created>1703182556484</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1703182556484</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -470,7 +454,8 @@
     <MESSAGE value="test: добавить тесты" />
     <MESSAGE value="style: код-style" />
     <MESSAGE value="feat: создал класс Director" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: создал класс Director" />
+    <MESSAGE value="init: Init" />
+    <option name="LAST_COMMIT_MESSAGE" value="init: Init" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

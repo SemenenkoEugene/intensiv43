@@ -30,4 +30,16 @@ public class MovieService {
                 ))
                 .collect(Collectors.toList());
     }
+
+    public List<MovieDto> findAll() {
+        return movieDao.findAll().stream()
+                .map(movie -> new MovieDto(
+                        movie.getId(),
+                        movie.getDirector(),
+                        movie.getName(),
+                        movie.getYearOfProduction()
+
+                ))
+                .collect(Collectors.toList());
+    }
 }
