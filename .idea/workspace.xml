@@ -1,37 +1,292 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="unnamed2" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f8460f0-851d-4a07-ad7b-1f24c0e971a6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="3f8460f0-851d-4a07-ad7b-1f24c0e971a6" name="Changes" comment="fix: исправлена логика">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/aston/servlet_app/dto/MovieActorDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/aston/servlet_app/servlet/MovieDirectorServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/unnamed2/WEB-INF/classes/ru/aston/servlet_app/dao/MovieDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/unnamed2/WEB-INF/classes/ru/aston/servlet_app/dao/MovieDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/unnamed2/WEB-INF/classes/ru/aston/servlet_app/entity/Movie$MovieBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/unnamed2/WEB-INF/classes/ru/aston/servlet_app/entity/Movie$MovieBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/unnamed2/WEB-INF/classes/ru/aston/servlet_app/entity/Movie.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/unnamed2/WEB-INF/classes/ru/aston/servlet_app/entity/Movie.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/unnamed2/WEB-INF/classes/ru/aston/servlet_app/mapper/MovieMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/unnamed2/WEB-INF/classes/ru/aston/servlet_app/mapper/MovieMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/unnamed2/WEB-INF/classes/ru/aston/servlet_app/service/MovieService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/unnamed2/WEB-INF/classes/ru/aston/servlet_app/service/MovieService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/unnamed2/WEB-INF/classes/ru/aston/servlet_app/servlet/ActorServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/unnamed2/WEB-INF/classes/ru/aston/servlet_app/servlet/ActorServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/unnamed2/WEB-INF/classes/ru/aston/servlet_app/servlet/MovieActorServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/unnamed2/WEB-INF/classes/ru/aston/servlet_app/servlet/MovieActorServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/aston/servlet_app/dao/MovieDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/aston/servlet_app/dao/MovieDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/aston/servlet_app/entity/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/aston/servlet_app/entity/Movie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/aston/servlet_app/mapper/MovieMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/aston/servlet_app/mapper/MovieMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/aston/servlet_app/service/MovieService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/aston/servlet_app/service/MovieService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/aston/servlet_app/servlet/ActorServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/aston/servlet_app/servlet/ActorServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/aston/servlet_app/servlet/MovieActorServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/aston/servlet_app/servlet/MovieActorServlet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit5 Test Class" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="feature/hw2_MyArraylist" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2ZXlzw7bWALOg0wHQTbO5lPvRHP" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;extract.method.default.visibility&quot;: &quot;private&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature/hw3__JDBCApp&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;cn.yiiguxing.plugin.translate&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
+    ]
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="ru.aston.servlet_app.dto" />
+      <recent name="ru.aston.servlet_app.service" />
+      <recent name="ru.aston.servlet_app.exception" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="ru.aston.my_arraylist" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.65">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.aston.Main" />
+      <module name="semenenko" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.aston.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyArrayListTest.testRemoveElement_allValid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="semenenko" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.aston.my_arraylist.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.aston.my_arraylist" />
+      <option name="MAIN_CLASS_NAME" value="ru.aston.my_arraylist.MyArrayListTest" />
+      <option name="METHOD_NAME" value="testRemoveElement_allValid" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyArrayListTest.testRemoveElement_ifElementNotFound" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="semenenko" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.aston.my_arraylist.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.aston.my_arraylist" />
+      <option name="MAIN_CLASS_NAME" value="ru.aston.my_arraylist.MyArrayListTest" />
+      <option name="METHOD_NAME" value="testRemoveElement_ifElementNotFound" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyArrayListTest.testRemoveIndex_indexOutSize" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="semenenko" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.aston.my_arraylist.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.aston.my_arraylist" />
+      <option name="MAIN_CLASS_NAME" value="ru.aston.my_arraylist.MyArrayListTest" />
+      <option name="METHOD_NAME" value="testRemoveIndex_indexOutSize" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyArrayListTest.testSize" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="semenenko" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.aston.my_arraylist.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.aston.my_arraylist" />
+      <option name="MAIN_CLASS_NAME" value="ru.aston.my_arraylist.MyArrayListTest" />
+      <option name="METHOD_NAME" value="testSize" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tomcat 9.0.65" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.65" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="OPEN_IN_BROWSER" value="false" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="unnamed2">
+          <settings>
+            <option name="CONTEXT_PATH" value="" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="7b60a183-3d1c-4a0d-8bc9-5de959fa66b2" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="58839" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="unnamed2" />
+        </option>
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="JUnit.MyArrayListTest.testRemoveElement_allValid" />
+      <item itemvalue="JUnit.MyArrayListTest.testRemoveElement_ifElementNotFound" />
+      <item itemvalue="JUnit.MyArrayListTest.testRemoveIndex_indexOutSize" />
+      <item itemvalue="JUnit.MyArrayListTest.testSize" />
+      <item itemvalue="Tomcat Server.Tomcat 9.0.65" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.MyArrayListTest.testSize" />
+        <item itemvalue="JUnit.MyArrayListTest.testRemoveElement_ifElementNotFound" />
+        <item itemvalue="JUnit.MyArrayListTest.testRemoveElement_allValid" />
+        <item itemvalue="JUnit.MyArrayListTest.testRemoveIndex_indexOutSize" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -40,8 +295,182 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1702576572989</updated>
-      <workItem from="1702576574074" duration="3000" />
+      <workItem from="1702576574074" duration="421000" />
+      <workItem from="1702650239281" duration="676000" />
+      <workItem from="1702730501320" duration="21400000" />
+      <workItem from="1702831244065" duration="762000" />
+      <workItem from="1702899643335" duration="34423000" />
     </task>
+    <task id="LOCAL-00001" summary="init: init commit">
+      <option name="closed" value="true" />
+      <created>1702576793880</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1702576793880</updated>
+    </task>
+    <task id="LOCAL-00002" summary="feat: добавил .gitignore">
+      <option name="closed" value="true" />
+      <created>1702650753478</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1702650753478</updated>
+    </task>
+    <task id="LOCAL-00003" summary="feat: добавил метод add">
+      <option name="closed" value="true" />
+      <created>1702734461803</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1702734461803</updated>
+    </task>
+    <task id="LOCAL-00004" summary="feat: добавил метод get">
+      <option name="closed" value="true" />
+      <created>1702735279565</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1702735279565</updated>
+    </task>
+    <task id="LOCAL-00005" summary="feat: добавил метод isEmpty">
+      <option name="closed" value="true" />
+      <created>1702735329529</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1702735329529</updated>
+    </task>
+    <task id="LOCAL-00006" summary="feat: добавил метод remove(int index)">
+      <option name="closed" value="true" />
+      <created>1702735499181</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1702735499181</updated>
+    </task>
+    <task id="LOCAL-00007" summary="feat: добавил метод remove(T element)">
+      <option name="closed" value="true" />
+      <created>1702735721217</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1702735721217</updated>
+    </task>
+    <task id="LOCAL-00008" summary="feat: добавил методы согласно ТЗ">
+      <option name="closed" value="true" />
+      <created>1702818818536</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1702818818536</updated>
+    </task>
+    <task id="LOCAL-00009" summary="test: добавить тесты">
+      <option name="closed" value="true" />
+      <created>1702818942793</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1702818942793</updated>
+    </task>
+    <task id="LOCAL-00010" summary="test: добавить тесты">
+      <option name="closed" value="true" />
+      <created>1702823539980</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1702823539980</updated>
+    </task>
+    <task id="LOCAL-00011" summary="style: код-style">
+      <option name="closed" value="true" />
+      <created>1702823591200</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1702823591200</updated>
+    </task>
+    <task id="LOCAL-00012" summary="feat: создал класс Director">
+      <option name="closed" value="true" />
+      <created>1703098422360</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1703098422360</updated>
+    </task>
+    <task id="LOCAL-00013" summary="init: Init">
+      <option name="closed" value="true" />
+      <created>1703182556484</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1703182556484</updated>
+    </task>
+    <task id="LOCAL-00014" summary="fix: исправлена логика">
+      <option name="closed" value="true" />
+      <created>1703237686550</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1703237686550</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="feature/hw1_gitignore" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init: init commit" />
+    <MESSAGE value="feat: добавил .gitignore" />
+    <MESSAGE value="feat: добавил метод add" />
+    <MESSAGE value="feat: добавил метод get" />
+    <MESSAGE value="feat: добавил метод isEmpty" />
+    <MESSAGE value="feat: добавил метод remove(int index)" />
+    <MESSAGE value="feat: добавил метод remove(T element)" />
+    <MESSAGE value="feat: добавил методы согласно ТЗ" />
+    <MESSAGE value="test: добавить тесты" />
+    <MESSAGE value="style: код-style" />
+    <MESSAGE value="feat: создал класс Director" />
+    <MESSAGE value="init: Init" />
+    <MESSAGE value="fix: исправлена логика" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: исправлена логика" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ru/aston/servlet_app/dao/MovieDao.java</url>
+          <line>70</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

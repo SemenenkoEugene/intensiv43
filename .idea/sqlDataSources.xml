@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DdlMappings">
+    <mapping uuid="a586b958-f99b-4844-b5c2-37ff106d5596" name="FilmLibrary-DB Mapping">
+      <data-sources db="a609f4b5-b512-4702-99dd-510f0a868812" />
+      <scope>
+        <node kind="database" qname="filmLibrary_db">
+          <node kind="schema" qname="@" />
+        </node>
+      </scope>
+    </mapping>
+  </component>
+</project>

@@ -36,7 +36,7 @@ public class MyArrayList<T> {
     }
 
 
-    public void add(int index, T element) throws ClassCastException {
+    public void add(int index, T element) {
         checkCapacity();
         if (index < 0 || index > size) {
             throw new IndexOutOfBoundsException("Index " + index + " out of bounds");
@@ -72,6 +72,7 @@ public class MyArrayList<T> {
     }
 
     public void clear() {
+        list = (T[]) new Object[DEFAULT_CAPACITY];
         size = 0;
     }
 
